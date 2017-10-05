@@ -1,0 +1,114 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #161616;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: purple;
+}
+.navigationpane {
+  height: 91.22px;
+  width: 450px;
+  padding-top: 45px;
+  background: pink;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+main {
+  padding-top: 113px;
+}
+section {
+  margin-right: 300px;
+}
+aside {
+  position: absolute;
+  width: 200px;
+  height:500px;
+  padding: 50px
+  marging: 530px;
+  overflow: hidden;
+}
+/* эксперименты с position */
+.position-parent {
+ width: 200px;
+ height: 300px;
+ background: pink;
+ position: relative;
+ margin: 50px;
+}
+.position-child {
+ height: 300px;
+ width: 200px;
+ background: violet;
+ position: relative;
+ left: 100px;
+ top: 100px;
+}
+.position-child-absolute {
+ height: 300px;
+ width: 200px;
+ background: grey;
+ position: absolute;
+ left: 100px;
+ top: 100px;
+ }
+.position-child-fixed {
+  height: 300px;
+  width: 100px;
+  background: green;
+  position: fixed;
+  right: 100px;
+  top: 100px;
+}
+.position-child-z-index {
+ height: 300px;
+ width: 200px;
+ background: purple;
+ position: absolute;
+ }
+
+.z-index-1 {
+left: 50px;
+top: 50px;
+background: red;
+opacity: .5;
+z-index: 3;
+}
+.z-index-2 {
+  left: 100px;
+  top: 100px;
+  background: green;
+  opacity: .3;
+  z-index: 2;
+}
+.z-index-3 {
+  left: 150px;
+  top: 150px;
+  background: blue;
+  opacity: .1;
+  z-index: 1;
+}
+
+.font-size {
+  font-size: 30px;
+}
+.font-weight {
+  font-weight: 600;
+}
+.font-style {
+  font-style: italic;
+}
+.font-variant {
+  font-variant: small-caps;
+}
+.text-shadow {
+  text-shadow: 5px 5px 1px gray;
+}
