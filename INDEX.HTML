@@ -4,22 +4,25 @@
     <meta charset="utf8">
     <!-- заголовок документа -->
     <title>Проект номер 1</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Podkova&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- тело документа -->
-    <header>
-      <h1>Название страницы</h1>
+    <header class="header">
+      <h1 class="header_1_heading">Название страницы</h1>
       <nav class="navigationpane">
         <a href="index.html">Главная</a>
         <a href="contacts.html">Контакты</a>
         <a href="article.html">Моя статья</a>
         <a href="article-2.html">Моя вторая статья</a>
       </nav>
-      <main>
+    </header>
+      <main class="main">
       <section>
-        <h2>Название контента</h2>
+        <h2>Название заголовка</h2>
         <nav>
           <a href="#article-1">Первая статья</a>
           <a href="#article-2">Вторая статья</a>
@@ -41,13 +44,19 @@
       <a href="tel:+79260983241">Позвони мне</a>
 
       </section>
-      <aside>
-        <h4>Это футер</h4>
+
+      <aside class="aside">
+        <h4 class="aside header"></h4>
+        <nav class="aside_nav">
+          <a href="article.html" class="aside__nav-link">Моя первая статья</a>
+        </nav>
       </aside>
+
     </main>
 
     <footer class="footer">
-      <p>этофутер
+      <p class "footer_copyright">@Анечка</p>
+      <p class="footer__email">E-mail: <a href="mailto:anna.yakimenko@gmail.com" class=""lass="footer__email-link">anna.yakimenko@gmail.com</a></p>
     </footer>
 
   </body>

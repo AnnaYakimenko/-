@@ -2,40 +2,47 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Podkova', serif;
   font-size: 18px;
   color: #161616;
+  padding: 0;
+  margin: 0;
 }
-header {
+.header {
   position: fixed;
+  height: 91.22px;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: purple;
+  background-color: rgba(201, 185, 209, 0.28);
+}
+.header_1_heading {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
 }
 .navigationpane {
+  position: absolute;
   height: 91.22px;
   width: 450px;
   padding-top: 45px;
-  background: pink;
-  position: absolute;
+  background:  rgba(201, 185, 209, 0.28;
   right: 0;
   top: 0;
 }
-main {
+.aside {
+  top: 90px;
+  right: 20px;
+  background-color: rgba(240, 248, 255, 0.13);
+}
+.main {
+  background-color: rgba(240, 248, 255, 0.13);
   padding-top: 113px;
+  position-relative
 }
 section {
   margin-right: 300px;
 }
-aside {
-  position: absolute;
-  width: 200px;
-  height:500px;
-  padding: 50px
-  marging: 530px;
-  overflow: hidden;
-}
+
 /* эксперименты с position */
 .position-parent {
  width: 200px;
@@ -111,4 +118,148 @@ z-index: 3;
 }
 .text-shadow {
   text-shadow: 5px 5px 1px gray;
+}
+
+.background-image-svg {
+  width: 100px;
+  height: 100px;
+  margin: 100px;
+  background-image: url ("img/cheese.svg");
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 400px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  background-color: white;
+  border: 1px solid navy;
+}
+.flex-element {
+  width: 300px;
+  height: 50px;
+}
+
+.flex-element-1 {
+  background-color: red
+}
+.flex-element-2 {
+  background-color: green;
+}
+.flex-element-3 {
+  background-color: yellow;
+}
+.flex-element-4 {
+  background-color: grey;
+
+  }
+.flex-element-5 {
+  background-color: purple;
+}
+
+.background-color {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
+.background-color-child {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border: 1px solid green;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-image: url("img/ice-cream.svg");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.hover {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  margin-bottom: 200px;
+  background-color: red;
+  }
+.hover:hover {
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  border: 1px dashed black;
+}
+.link-hover {
+  color: green;
+  font-size: 36px;
+}
+.link-hover:hover {
+  color: black;
+  text-decoration: nnone;
+}
+
+.focus {
+outline: 0;
+width: 150px;
+height: 50px;
+border: 1px solid blue;
+border-radius: 10px;
+padding: 10px;
+}
+.focus:focus {
+  box-shadow: inset 0 0 15px 0 rgba (0, 0, 0, .8);
+}
+
+.pseudo-classes-parent {
+  padding: 20px;
+}
+.pseudo-classes-child {
+  height: 20px;
+  margin: 50px;
+  border: 1px solid gray;
+}
+
+.pseudo-classes-child:first-child {
+  border: 2px solid red;
+}
+.pseudo-classes-child:last-child {
+  border: 2px solid yellow;
+}
+.pseudo-classes-child:nth-child(2n) {
+  background: purple;
+}
+.pseudo-classes-child:nth-child(odd) {
+  background: pink;
+}
+.pseudoelements:before {
+  content: "это тест before";
+  color: red;
+}
+.pseudoelements:after {
+content: "это тест after";
+color: green;
+}
+
+.transition-color {
+  font-size: 30px;
+  color: black;
+  transition: color 1s ease 1s, font-size 2s ease-out;
+}
+.transition-color:hover {
+  color: red;
+  font-size: 45px;
+}
+
+.transition-left {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  position: relative;
+  left: 0;
+  transition: left 3s ease-in 1s;
+}
+.transition-left:hover {
+  left: 200px;
 }
